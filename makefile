@@ -2,6 +2,12 @@ all: up
 
 prepare: 
 	@echo "************************Checking For Dependecies***************************"
+	
+#	@sudo apt-get update
+#	@sudo apt install -y docker.io
+#	@sudo apt install -y docker-compose
+#	@sudo systemctl enable --now docker
+	
 	@sudo pacman -Syu
 	@sudo pacman -Syu docker
 	@sudo pacman -Syu docker-compose
