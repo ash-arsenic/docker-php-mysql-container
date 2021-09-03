@@ -32,7 +32,7 @@ up: prepare
 
 teardown: down
 	@echo "****************************Removing Containers*************************"
-	@sudo docker rm apache database
+	@sudo docker-compose down
 	@sudo rm -rf ./docker
 
 down:
